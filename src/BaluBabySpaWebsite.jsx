@@ -1,30 +1,31 @@
 import { useState } from 'react'
+import baluImage from './Picture/balu.jpg'
 
 export default function BaluBabySpaWebsite() {
   const [activeMedia, setActiveMedia] = useState(null);
   const services = [
     {
       title: 'Hidroterapija za bebe',
-      text: 'Nežna terapija u toploj vodi koja pomaže bebi da se opusti, prirodno pokreće, jača mišiće i razvija koordinaciju.',
+      text: 'Nežno plutanje i pokreti u vodi podstiču razvoj mišića i koordinaciju, uz osećaj slobode i uživanja.',
       icon: '💧',
     },
     {
-      title: 'Masaža i vežbe za bebe',
-      text: 'Pažljivo vođene masaže i vežbice prilagođene uzrastu bebe, sa fokusom na pravilan razvoj i osećaj sigurnosti.',
+      title: 'Masaža beba i razvojne aktivnosti',
+      text: 'Blagi, stručni dodiri smiruju, opuštaju i podstiču pravilan razvoj nervnog sistema.',
       icon: '🫶',
     },
     {
-      title: 'Slana soba',
-      text: 'Prijatan i umirujući prostor za dodatnu relaksaciju i negu, osmišljen za bebe i roditelje.',
+      title: 'Slana soba za decu i odrasle',
+      text: 'Prirodno i prijatno okruženje koje blagotvorno deluje na disajne puteve, kožu i opšte zdravlje.',
       icon: '🌿',
     },
   ];
 
   const benefits = [
-    'Pomaže opuštanju i umirenju bebe',
-    'Podstiče razvoj koordinacije i motorike',
-    'Može doprineti boljem snu i manjem osećaju grčeva',
-    'Stvara prijatno iskustvo povezivanja bebe i roditelja',
+    'pravilan motorički razvoj',
+    'jačanje mišića i koordinacije',
+    'bolji san i opuštanje',
+    'jačanje imuniteta',
   ];
 
   const steps = [
@@ -35,6 +36,11 @@ export default function BaluBabySpaWebsite() {
   ];
 
   const galleryMedia = [
+    {
+      type: 'image',
+      src: baluImage,
+      alt: 'Izdvojeni pogled na Balu Baby Spa prostor',
+    },
     {
       type: 'image',
       src: 'https://img3.beautynailhairsalons.com/720/156/122111553987201560.jpg',
@@ -87,24 +93,41 @@ export default function BaluBabySpaWebsite() {
         'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D1517859092623265&show_text=false&width=560&t=0',
       description: 'Zvanični video objavljen na profilu Balu Baby Spa (Facebook Watch).',
     },
+    {
+      type: 'video',
+      title: 'Balu Baby Spa Shorts 01',
+      embedUrl: 'https://www.youtube.com/embed/rEBZMDBJxOQ',
+      description: 'Kratak prikaz atmosfere i tretmana iz Balu Baby Spa prostora.',
+      isShort: true,
+    },
+    {
+      type: 'video',
+      title: 'Balu Baby Spa Shorts 02',
+      embedUrl: 'https://www.youtube.com/embed/iTmtQ97EJ-g',
+      description: 'Još jedan kadar koji prikazuje nežan pristup i ambijent centra.',
+      isShort: true,
+    },
+    {
+      type: 'video',
+      title: 'Balu Baby Spa Shorts 03',
+      embedUrl: 'https://www.youtube.com/embed/rDGWVDia0b4',
+      description: 'Video detalj koji dopunjuje prezentaciju prostora i doživljaja.',
+      isShort: true,
+    },
   ];
 
-  const pricing = [
-    {
-      title: 'Paket „Prvi mehurići”',
-      description: 'Hidroterapija u kadici + mini masaža (45 min)',
-      price: '3.500 RSD',
-    },
-    {
-      title: 'Mesečni balans',
-      description: '4 individualna dolaska + konsultacije sa terapeutom',
-      price: '12.900 RSD',
-    },
-    {
-      title: 'Slana soba i vežbice',
-      description: 'Relaks zona + vođene vežbice (45 min)',
-      price: '2.400 RSD',
-    },
+  const saltRoomKidsBenefits = [
+    'kod čestih prehlada i zapušenog nosa',
+    'jačanju imuniteta',
+    'lakšem disanju',
+    'smanjenju simptoma alergija',
+  ];
+
+  const saltRoomAdultBenefits = [
+    'olakšava disanje kod alergija i astme',
+    'pomaže kod problema sa sinusima',
+    'doprinosi opuštanju i smanjenju stresa',
+    'povoljno utiče na kožu',
   ];
 
   const closeLightbox = () => setActiveMedia(null);
@@ -133,11 +156,19 @@ export default function BaluBabySpaWebsite() {
                 Hidroterapija · Masaža · Slana soba
               </span>
               <h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-                Mesto gde beba uživa, a roditelji dobijaju mir i poverenje.
+                Balu Baby Spa
               </h1>
+              <p className="mt-4 text-xl font-semibold text-slate-700 sm:text-2xl">Centar za rast i razvoj beba</p>
+              <p className="mt-2 text-sm uppercase tracking-[0.35em] text-rose-400 sm:text-base">
+                Izvor zdravlja i opuštanja
+              </p>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                Balu Baby Spa u Pirotu pruža nežne i pažljivo osmišljene tretmane za bebe — hidroterapiju,
-                masažu, vežbice i relaksaciju u toplom, sigurnom i umirujućem ambijentu.
+                Dobrodošli u svet nežne brige, sigurnosti i ljubavi. Balu Baby Spa je mesto gde svaka beba
+                dobija pažnju kakvu zaslužuje, a roditelji mir i poverenje.
+              </p>
+              <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
+                Kroz pažljivo osmišljene tretmane podstičemo pravilan razvoj, jačamo imunitet i stvaramo
+                prve lepe navike koje traju ceo život.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
                 <a
@@ -153,11 +184,27 @@ export default function BaluBabySpaWebsite() {
                   Saznajte više
                 </a>
               </div>
+              <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+                {[
+                  ['Za bebe', '#usluge'],
+                  ['Slana soba', '#slana-soba'],
+                  ['Za odrasle', '#za-odrasle'],
+                  ['Galerija', '#galerija'],
+                ].map(([label, href]) => (
+                  <a
+                    key={label}
+                    href={href}
+                    className="rounded-full border border-slate-200 bg-white/90 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
               <div className="mt-10 grid max-w-xl grid-cols-2 gap-4 sm:grid-cols-4">
                 {[
                   ['0–18 meseci', 'uzrast'],
-                  ['Topao ambijent', 'udobnost'],
-                  ['Nežan pristup', 'sigurnost'],
+                  ['Toplina i sigurnost', 'ambijent'],
+                  ['Stručna nega', 'pristup'],
                   ['Pirot', 'lokacija'],
                 ].map(([value, label]) => (
                   <div key={label} className="rounded-2xl border border-white/80 bg-white/80 p-4 shadow-sm backdrop-blur">
@@ -178,7 +225,7 @@ export default function BaluBabySpaWebsite() {
                       </div>
                       <h2 className="mt-6 text-2xl font-semibold text-slate-900">Balu Baby Spa</h2>
                       <p className="mt-3 text-slate-600">
-                        Nežna hidroterapija, opuštajuća masaža i pažljivo vođene vežbice za bebe.
+                        Mesto gde se zdravlje, opuštanje i nežna briga susreću od najranijih dana.
                       </p>
                     </div>
                     <div className="rounded-2xl bg-white p-5 shadow-sm">
@@ -201,12 +248,81 @@ export default function BaluBabySpaWebsite() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-4 pb-4 sm:px-6 lg:px-10">
+        <div className="grid gap-4 md:grid-cols-3">
+          <a
+            href="#usluge"
+            className="rounded-[1.75rem] border border-rose-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">Za bebe</p>
+            <h3 className="mt-3 text-xl font-semibold text-slate-900">Hidroterapija i masaža</h3>
+            <p className="mt-2 leading-7 text-slate-600">Nežan početak kroz pokret, opuštanje i podršku pravilnom razvoju.</p>
+          </a>
+          <a
+            href="#slana-soba"
+            className="rounded-[1.75rem] border border-emerald-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-500">Slana soba</p>
+            <h3 className="mt-3 text-xl font-semibold text-slate-900">Prirodno lakše disanje</h3>
+            <p className="mt-2 leading-7 text-slate-600">Posebna celina za zdravlje i opuštanje u ambijentu koji prija celoj porodici.</p>
+          </a>
+          <a
+            href="#za-odrasle"
+            className="rounded-[1.75rem] border border-sky-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-500">Za odrasle</p>
+            <h3 className="mt-3 text-xl font-semibold text-slate-900">Brz pristup benefitima</h3>
+            <p className="mt-2 leading-7 text-slate-600">Odmah otvorite deo namenjen roditeljima i odraslima bez traženja kroz celu stranicu.</p>
+          </a>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-10">
+        <div className="grid items-stretch gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="overflow-hidden rounded-[2rem] border border-white/80 bg-white shadow-xl shadow-slate-200">
+            <img
+              src={baluImage}
+              alt="Balu Baby Spa prostor"
+              className="h-[320px] w-full object-cover object-center sm:h-[420px]"
+            />
+          </div>
+          <div className="flex flex-col justify-center rounded-[2rem] bg-white p-6 shadow-xl shadow-slate-100 sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">Izdvajamo</p>
+            <h2 className="mt-4 text-2xl font-bold text-slate-900 sm:text-3xl">Prostor koji spaja toplinu, sigurnost i opuštanje</h2>
+            <p className="mt-4 leading-8 text-slate-600">
+              Ova fotografija dodatno približava atmosferu Balu Baby Spa centra i daje jasniji utisak o ambijentu u kome se odvijaju tretmani.
+            </p>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#galerija"
+                className="rounded-full bg-slate-900 px-5 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5"
+              >
+                Pogledajte celu galeriju
+              </a>
+              <a
+                href="#kontakt"
+                className="rounded-full border border-slate-200 bg-slate-50 px-5 py-3 text-center text-sm font-semibold text-slate-800 transition hover:-translate-y-0.5"
+              >
+                Zakažite dolazak
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="galerija" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">Galerija</p>
           <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Uđite u Balu Baby Spa</h2>
           <p className="mt-4 text-lg text-slate-600">
-            Fotografije i video preuzeti su sa javno dostupnih listinga i društvenih mreža Balu Baby Spa salona u Pirotu.
+            Fotografije i video sadržaj prikazuju prostor, atmosferu i nežan pristup po kome je Balu Baby Spa prepoznatljiv.
+          </p>
+        </div>
+
+        <div className="mt-8 rounded-[2rem] border border-sky-100 bg-white/80 px-5 py-5 text-center shadow-sm backdrop-blur sm:px-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-500">Video trenuci</p>
+          <p className="mt-3 text-slate-600">
+            Video trenuci uklopljeni su u galeriju kako bi prezentacija prostora delovala življe, toplije i uverljivije.
           </p>
         </div>
 
@@ -217,7 +333,11 @@ export default function BaluBabySpaWebsite() {
                 key={`video-${index}`}
                 className="relative overflow-hidden rounded-3xl border border-white/80 bg-slate-900 shadow-lg shadow-slate-200"
               >
-                <div className="block aspect-video w-full">
+                <div
+                  className={`block w-full overflow-hidden ${
+                    item.isShort ? 'mx-auto aspect-[9/16] max-w-[320px] sm:max-w-full' : 'aspect-video'
+                  }`}
+                >
                   <iframe
                     title={item.title}
                     src={item.embedUrl}
@@ -228,7 +348,7 @@ export default function BaluBabySpaWebsite() {
                     className="h-full w-full"
                   />
                 </div>
-                <div className="px-5 py-4 text-sm text-white/80">
+                <div className="px-4 py-4 text-sm text-white/80 sm:px-5">
                   <p className="font-semibold text-white">{item.title}</p>
                   <p>{item.description}</p>
                 </div>
@@ -251,9 +371,9 @@ export default function BaluBabySpaWebsite() {
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
-                  className="h-64 w-full object-cover transition duration-300 group-hover:scale-[1.03]"
+                  className="h-64 w-full object-cover transition duration-300 group-hover:scale-[1.03] sm:h-64"
                 />
-                <figcaption className="px-5 py-4 text-sm text-slate-600">{item.alt}</figcaption>
+                <figcaption className="px-4 py-4 text-sm text-slate-600 sm:px-5">{item.alt}</figcaption>
               </figure>
             ),
           )}
@@ -265,7 +385,7 @@ export default function BaluBabySpaWebsite() {
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">Usluge</p>
           <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Sve što je potrebno za nežan početak</h2>
           <p className="mt-4 text-lg text-slate-600">
-            Programi su osmišljeni tako da pruže podršku ranom razvoju bebe kroz relaksaciju, pokret i prijatno iskustvo.
+            Naše usluge pažljivo su osmišljene da podrže prirodan razvoj bebe i donesu roditeljima osećaj mira i poverenja.
           </p>
         </div>
 
@@ -280,33 +400,93 @@ export default function BaluBabySpaWebsite() {
             </div>
           ))}
         </div>
+        <p className="mx-auto mt-8 max-w-4xl rounded-3xl border border-emerald-100 bg-emerald-50 px-6 py-5 text-center leading-8 text-slate-700">
+          Aktivnosti su nežne, prilagođene uzrastu i usmerene na podsticanje prirodnog razvoja, bez elemenata medicinskog tretmana.
+        </p>
       </section>
 
-      <section id="cene" className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-10">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">Cenovnik</p>
-          <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Fiktivne cene za osnovne pakete</h2>
-          <p className="mt-4 text-lg text-slate-600">Cene su informativne i lako ih možete zameniti stvarnim tarifama.</p>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {pricing.map((item) => (
-            <div key={item.title} className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 text-center shadow-lg shadow-slate-100">
-              <p className="text-sm font-semibold uppercase tracking-[0.4em] text-rose-300">Ponuda</p>
-              <h3 className="mt-3 text-2xl font-bold">{item.title}</h3>
-              <p className="mt-3 flex-1 text-base text-slate-600">{item.description}</p>
-              <p className="mt-6 text-3xl font-semibold text-slate-900">{item.price}</p>
-              <p className="mt-1 text-sm text-slate-500">Zakazivanje putem forme ili telefonom</p>
+      <section id="slana-soba" className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-10">
+        <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 p-6 text-white shadow-2xl sm:p-10">
+          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-200">Slana soba za decu i odrasle</p>
+              <h2 className="mt-4 text-2xl font-bold sm:text-4xl">Prirodno i prijatno okruženje za lakše disanje i opuštanje</h2>
+              <p className="mt-5 text-lg leading-8 text-white/85">
+                U okviru Balu Baby Spa centra nudimo i boravak u slanoj sobi, prostoru koji blagotvorno deluje na disajne puteve,
+                kožu i opšte zdravlje.
+              </p>
+              <p className="mt-4 leading-8 text-white/75">
+                Prostor je obogaćen mikročesticama soli koje se udišu tokom boravka, stvarajući efekat sličan boravku na moru.
+              </p>
             </div>
-          ))}
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <div id="za-decu" className="rounded-[1.75rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
+                <p className="text-lg font-semibold">Za decu</p>
+                <p className="mt-3 text-sm leading-7 text-white/75">
+                  Deca boravak doživljavaju kao igru, dok istovremeno jačaju organizam na prirodan način.
+                </p>
+                <div className="mt-5 space-y-3">
+                  {saltRoomKidsBenefits.map((item) => (
+                    <div key={item} className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/90">
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div id="za-odrasle" className="rounded-[1.75rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
+                <p className="text-lg font-semibold">Za odrasle</p>
+                <p className="mt-3 text-sm leading-7 text-white/75">
+                  Idealna je za roditelje koji žele da zajedno sa decom provedu vreme u zdravom i opuštajućem ambijentu.
+                </p>
+                <div className="mt-5 space-y-3">
+                  {saltRoomAdultBenefits.map((item) => (
+                    <div key={item} className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/90">
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 rounded-[1.75rem] border border-emerald-200/20 bg-white/10 px-6 py-6 text-center backdrop-blur">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-100">Prirodno. Bezbedno. Opuštajuće.</p>
+            <p className="mt-4 max-w-4xl text-base leading-8 text-white/85">
+              Tretman u slanoj sobi je neinvazivan, prijatan i pogodan za sve generacije. To je mesto gde se zdravlje i opuštanje susreću za celu porodicu.
+            </p>
+            <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
+              <a
+                href="#za-decu"
+                className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+              >
+                Pogledajte deo za decu
+              </a>
+              <a
+                href="#za-odrasle"
+                className="rounded-full border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/20"
+              >
+                Pogledajte deo za odrasle
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="o-nama" className="bg-white/70 py-16 sm:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-10">
           <div className="rounded-[2rem] bg-white p-8 shadow-xl shadow-slate-100">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-500">Zašto roditelji biraju nas</p>
-            <h2 className="mt-4 text-3xl font-bold">Nežan, topao i pažljivo vođen pristup</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-500">O nama</p>
+            <h2 className="mt-4 text-3xl font-bold">Prvi meseci života ključni su za pravilan razvoj</h2>
+            <p className="mt-5 leading-8 text-slate-600">
+              U Balu Baby Spa centru verujemo da su prvi meseci života deteta posebno važni. Naš pristup se zasniva na nežnosti,
+              stručnosti i individualnom radu sa svakom bebom.
+            </p>
+            <p className="mt-4 leading-8 text-slate-600">
+              Kombinujemo hidroterapiju, masažu i stimulativne aktivnosti kako bismo podržali prirodan razvoj i stvorili osećaj sigurnosti,
+              topline i luksuza od samog početka.
+            </p>
             <div className="mt-8 space-y-4">
               {benefits.map((item) => (
                 <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
@@ -319,7 +499,10 @@ export default function BaluBabySpaWebsite() {
 
           <div className="rounded-[2rem] bg-slate-900 p-8 text-white shadow-xl shadow-slate-200">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-200">Kako izgleda dolazak</p>
-            <h2 className="mt-4 text-3xl font-bold">Jednostavno i opušteno iskustvo</h2>
+            <h2 className="mt-4 text-3xl font-bold">Jednostavno, nežno i opušteno iskustvo</h2>
+            <p className="mt-5 leading-8 text-slate-200">
+              Svaki dolazak osmišljen je tako da bebi pruži pažnju kakvu zaslužuje, a roditeljima osećaj mira, jasnoće i poverenja.
+            </p>
             <div className="mt-8 space-y-4">
               {steps.map((step, index) => (
                 <div key={step} className="flex gap-4 rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -335,21 +518,36 @@ export default function BaluBabySpaWebsite() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-10">
-        <div className="rounded-[2rem] bg-gradient-to-r from-rose-400 via-pink-400 to-sky-400 p-10 text-white shadow-2xl">
+        <div className="rounded-[2rem] bg-gradient-to-r from-rose-400 via-pink-400 to-sky-400 p-6 text-white shadow-2xl sm:p-10">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-white/80">Kontakt</p>
-              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Zakažite svoj prvi dolazak</h2>
+              <h2 className="mt-4 text-2xl font-bold sm:text-4xl">Zakažite svoj prvi dolazak</h2>
               <p className="mt-4 max-w-2xl text-lg text-white/90">
                 Pišite nam za više informacija o terminima, uslugama i pripremi za dolazak u Balu Baby Spa.
               </p>
+              <p className="mt-4 text-base font-medium text-white">WhatsApp i Viber: +381 60 3277 105</p>
             </div>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href="#kontakt"
-                className="rounded-full bg-white px-6 py-3 text-center font-semibold text-slate-900 transition hover:-translate-y-0.5"
+                className="w-full rounded-full bg-white px-6 py-3 text-center font-semibold text-slate-900 transition hover:-translate-y-0.5 sm:w-auto"
               >
                 Pošaljite upit
+              </a>
+              <a
+                href="https://wa.me/381603277105"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full rounded-full border border-white/40 bg-white/10 px-6 py-3 text-center font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/20 sm:w-auto"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="viber://chat?number=%2B381603277105"
+                className="w-full rounded-full border border-white/40 bg-white/10 px-6 py-3 text-center font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/20 sm:w-auto"
+              >
+                Viber
               </a>
             </div>
           </div>
@@ -362,8 +560,7 @@ export default function BaluBabySpaWebsite() {
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-400">Balu Baby Spa</p>
             <h2 className="mt-4 text-3xl font-bold">Posetite nas u Pirotu</h2>
             <p className="mt-4 leading-8 text-slate-600">
-              Prvi koncept sajta urađen je kao moderna prezentacija usluga i prostora. Možete ga dalje dopuniti galerijom,
-              cenovnikom, Instagram/Facebook linkovima i online zakazivanjem.
+              Naš prostor je pažljivo osmišljen da pruži osećaj sigurnosti, topline i poverenja, jer vaše dete zaslužuje najbolje od samog početka.
             </p>
 
             <div className="mt-8 space-y-4 text-left">
@@ -379,10 +576,30 @@ export default function BaluBabySpaWebsite() {
                 <p className="text-sm text-slate-500">Društvene mreže</p>
                 <p className="mt-1 font-medium">Facebook stranica dostupna preko javnog listinga</p>
               </div>
+              <div className="rounded-2xl bg-rose-50 p-5">
+                <p className="text-sm text-slate-500">Zakazivanje</p>
+                <p className="mt-1 font-medium">WhatsApp i Viber: +381 60 3277 105</p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <a
+                    href="https://wa.me/381603277105"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+                  >
+                    Pišite na WhatsApp
+                  </a>
+                  <a
+                    href="viber://chat?number=%2B381603277105"
+                    className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition hover:-translate-y-0.5"
+                  >
+                    Otvorite Viber
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-100 bg-slate-50 p-6 shadow-inner sm:p-8">
+          <div className="rounded-[2rem] border border-slate-100 bg-slate-50 p-5 shadow-inner sm:p-8">
             <div className="grid gap-5 sm:grid-cols-2">
               <div className="sm:col-span-1">
                 <label className="mb-2 block text-sm font-medium text-slate-700">Ime roditelja</label>
