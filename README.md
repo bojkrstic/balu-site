@@ -21,10 +21,11 @@ Kako da se azurira u buduce:
 
 1. odes na server na ovaj folder: cd ~/apps/balu-site/
 2. uradis git pull, znaci skidas sa github-a
-3. npm run build
-4. mkdir -p /home/krle/html/balu-site   -za prvi put
+3. npm install
+4. npm run build
 5. mkdir -p /home/krle/html/balu-site   -za prvi put
-6. cp -r dist/* /home/krle/html/balu-site/   --> kopiras u html folder jer je on mountovan
+6. mkdir -p /home/krle/html/balu-site   -za prvi put
+7. cp -r dist/* /home/krle/html/balu-site/   --> kopiras u html folder jer je on mountovan
 
 a za ubuduce 
 
