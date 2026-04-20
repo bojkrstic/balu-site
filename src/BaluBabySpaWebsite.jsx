@@ -2,6 +2,8 @@ import { useState } from 'react'
 import baluImage from './Picture/balu.jpg'
 
 export default function BaluBabySpaWebsite() {
+  const sitePrefix =
+    typeof window !== 'undefined' && window.location.pathname.startsWith('/balu-site/') ? '/balu-site' : ''
   const [activeMedia, setActiveMedia] = useState(null);
   const [contactForm, setContactForm] = useState({
     name: '',
@@ -264,6 +266,8 @@ export default function BaluBabySpaWebsite() {
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
+  const withSitePrefix = (path) => `${sitePrefix}${path}`;
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-rose-50 via-white to-sky-50 text-slate-800">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
@@ -433,7 +437,7 @@ export default function BaluBabySpaWebsite() {
             ].map(([href, title, text]) => (
               <a
                 key={href}
-                href={href}
+                href={withSitePrefix(href)}
                 className="rounded-[1.75rem] border border-slate-100 bg-slate-50 p-6 transition hover:-translate-y-0.5"
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-400 sm:tracking-[0.25em]">Saznajte više</p>

@@ -2,10 +2,14 @@ import { contactPhone, servicePages, testimonials } from './servicePageContent'
 
 export default function ServiceLandingPage({ pageKey }) {
   const page = servicePages[pageKey]
+  const sitePrefix =
+    typeof window !== 'undefined' && window.location.pathname.startsWith('/balu-site/') ? '/balu-site' : ''
 
   if (!page) {
     return null
   }
+
+  const withSitePrefix = (path) => `${sitePrefix}${path}`
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -57,7 +61,7 @@ export default function ServiceLandingPage({ pageKey }) {
               <p className="text-sm text-slate-500">Pirot · balufamily.rs</p>
             </div>
             <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
-              <a href="/" className="w-full rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 sm:w-auto">
+              <a href={withSitePrefix('/')} className="w-full rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 sm:w-auto">
                 Početna
               </a>
               <a href="#kontakt" className="w-full rounded-full bg-slate-900 px-5 py-2.5 text-sm font-medium text-white sm:w-auto">
@@ -144,7 +148,7 @@ export default function ServiceLandingPage({ pageKey }) {
             {Object.entries(servicePages).map(([key, item]) => (
               <a
                 key={key}
-                href={item.path}
+                href={withSitePrefix(item.path)}
                 className={`rounded-[1.5rem] border p-5 transition hover:-translate-y-0.5 ${
                   key === pageKey ? 'border-emerald-200 bg-emerald-50' : 'border-slate-100 bg-slate-50'
                 }`}
