@@ -44,3 +44,8 @@ Obrišeš stari build:
 7. rm -rf /home/krle/html/balu-site/*
 Prekopiraš novi build u html folder koji je mountovan u nginx docker:
 8. cp -r dist/* /home/krle/html/balu-site/
+
+Za pokretanje na lokalu:
+1. npm install
+2. npm run dev
+3. http://localhost:5173
