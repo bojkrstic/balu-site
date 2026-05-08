@@ -135,7 +135,7 @@ export default function BaluBabySpaWebsite() {
     },
     {
       question: 'Kako mogu da zakažem termin za slanu sobu?',
-      answer: 'Termin možete zakazati brzo putem WhatsApp-a ili Vibera na broj +381 60 3277 105.',
+      answer: 'Termin možete zakazati brzo putem WhatsApp-a ili Vibera na broj 065 310 4333.',
     },
     {
       question: 'Da li se dolazak u Balu Baby Spa zakazuje unapred?',
@@ -203,7 +203,7 @@ export default function BaluBabySpaWebsite() {
     },
     {
       label: 'Kontakt',
-      value: '+381 60 3277 105',
+      value: '065 310 4333',
     },
     {
       label: 'Dostupno za',
@@ -218,7 +218,7 @@ export default function BaluBabySpaWebsite() {
     url: 'https://balufamily.rs/',
     description:
       'Balu Baby Spa u Pirotu nudi hidroterapiju za bebe, masažu beba i slanu sobu za decu i odrasle.',
-    telephone: '+381603277105',
+    telephone: '+381653104333',
     image: 'https://balufamily.rs/og-balu.jpg',
     address: {
       '@type': 'PostalAddress',
@@ -262,7 +262,7 @@ export default function BaluBabySpaWebsite() {
       contactForm.message ? `Poruka: ${contactForm.message}` : null,
     ].filter(Boolean);
 
-    const whatsappUrl = `https://wa.me/381603277105?text=${encodeURIComponent(lines.join('\n'))}`;
+    const whatsappUrl = `https://wa.me/381653104333?text=${encodeURIComponent(lines.join('\n'))}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -796,7 +796,7 @@ export default function BaluBabySpaWebsite() {
               <p className="mt-4 max-w-2xl text-lg text-white/90">
                 Pišite nam za više informacija o terminima, uslugama i pripremi za dolazak u Balu Baby Spa.
               </p>
-              <p className="mt-4 text-base font-medium text-white">WhatsApp i Viber: +381 60 3277 105</p>
+              <p className="mt-4 text-base font-medium text-white">WhatsApp i Viber: 065 310 4333</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
@@ -806,7 +806,7 @@ export default function BaluBabySpaWebsite() {
                 Pošaljite upit
               </a>
               <a
-                href="https://wa.me/381603277105"
+                href="https://wa.me/381653104333"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full rounded-full border border-white/40 bg-white/10 px-6 py-3 text-center font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/20 sm:w-auto"
@@ -814,7 +814,7 @@ export default function BaluBabySpaWebsite() {
                 WhatsApp
               </a>
               <a
-                href="viber://chat?number=%2B381603277105"
+                href="viber://chat?number=%2B381653104333"
                 className="w-full rounded-full border border-white/40 bg-white/10 px-6 py-3 text-center font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/20 sm:w-auto"
               >
                 Viber
@@ -844,10 +844,10 @@ export default function BaluBabySpaWebsite() {
               </div>
               <div className="rounded-2xl bg-rose-50 p-5">
                 <p className="text-sm text-slate-500">Zakazivanje</p>
-                <p className="mt-1 font-medium">WhatsApp i Viber: +381 60 3277 105</p>
+                <p className="mt-1 font-medium">WhatsApp i Viber: 065 310 4333</p>
                 <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                   <a
-                    href="https://wa.me/381603277105"
+                    href="https://wa.me/381653104333"
                     target="_blank"
                     rel="noreferrer"
                     className="w-full rounded-full bg-slate-900 px-4 py-2 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5 sm:w-auto"
@@ -855,7 +855,7 @@ export default function BaluBabySpaWebsite() {
                     Pišite na WhatsApp
                   </a>
                   <a
-                    href="viber://chat?number=%2B381603277105"
+                    href="viber://chat?number=%2B381653104333"
                     className="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-center text-sm font-semibold text-slate-800 transition hover:-translate-y-0.5 sm:w-auto"
                   >
                     Otvorite Viber

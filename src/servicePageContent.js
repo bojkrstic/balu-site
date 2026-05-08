@@ -1,4 +1,4 @@
-export const contactPhone = '+381 60 3277 105'
+export const contactPhone = '065 310 4333'
 
 export const testimonials = [
   {
@@ -51,7 +51,7 @@ export const servicePages = {
       },
       {
         question: 'Kako mogu da zakažem termin?',
-        answer: 'Termin možete zakazati putem WhatsApp-a ili Vibera na broj +381 60 3277 105.',
+        answer: 'Termin možete zakazati putem WhatsApp-a ili Vibera na broj 065 310 4333.',
       },
     ],
   },
@@ -123,7 +123,7 @@ export const servicePages = {
       },
       {
         question: 'Kako mogu da zakažem termin u Pirotu?',
-        answer: 'Najbrže putem WhatsApp-a ili Vibera na broj +381 60 3277 105.',
+        answer: 'Najbrže putem WhatsApp-a ili Vibera na broj 065 310 4333.',
       },
     ],
   },

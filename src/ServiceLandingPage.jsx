@@ -32,7 +32,7 @@ export default function ServiceLandingPage({ pageKey }) {
       '@type': 'HealthAndBeautyBusiness',
       name: 'Balu Baby Spa',
       url: 'https://balufamily.rs/',
-      telephone: '+381603277105',
+      telephone: '+381653104333',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Danila Kisa 2',
@@ -79,7 +79,7 @@ export default function ServiceLandingPage({ pageKey }) {
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{page.intro}</p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <a
-                  href={`https://wa.me/381603277105?text=${encodeURIComponent(`Pozdrav, zanima me ${page.title}.`)}`}
+                  href={`https://wa.me/381653104333?text=${encodeURIComponent(`Pozdrav, zanima me ${page.title}.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full rounded-full bg-rose-400 px-6 py-3 text-center font-medium text-white shadow-lg shadow-rose-200 sm:w-auto"
@@ -202,7 +202,7 @@ export default function ServiceLandingPage({ pageKey }) {
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
-                  href={`https://wa.me/381603277105?text=${encodeURIComponent(`Pozdrav, zanima me ${page.title}.`)}`}
+                  href={`https://wa.me/381653104333?text=${encodeURIComponent(`Pozdrav, zanima me ${page.title}.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full rounded-full bg-slate-900 px-5 py-3 text-center text-sm font-semibold text-white sm:w-auto"
@@ -210,7 +210,7 @@ export default function ServiceLandingPage({ pageKey }) {
                   WhatsApp
                 </a>
                 <a
-                  href="viber://chat?number=%2B381603277105"
+                  href="viber://chat?number=%2B381653104333"
                   className="w-full rounded-full border border-slate-300 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-800 sm:w-auto"
                 >
                   Viber
