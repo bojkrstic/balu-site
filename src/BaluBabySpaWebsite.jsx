@@ -217,7 +217,7 @@ export default function BaluBabySpaWebsite() {
     name: 'Balu Baby Spa',
     url: 'https://balufamily.rs/',
     description:
-      'Balu Baby Spa u Pirotu nudi hidroterapiju za bebe, masažu beba i slanu sobu za decu i odrasle.',
+      'Balu Baby Spa u Pirotu nudi kupanje beba, hidroterapiju za bebe, masažu beba i slanu sobu za decu i odrasle.',
     telephone: '+381653104333',
     image: 'https://balufamily.rs/og-balu.jpg',
     address: {
@@ -228,7 +228,7 @@ export default function BaluBabySpaWebsite() {
       addressCountry: 'RS',
     },
     areaServed: 'Pirot',
-    keywords: 'slana soba Pirot, slana soba, baby spa Pirot, hidroterapija za bebe Pirot, masaža beba Pirot',
+    keywords: 'kupanje beba Pirot, hidroterapija za bebe Pirot, masaža beba Pirot, slana soba za bebe Pirot, slana soba Pirot, baby spa Pirot',
     priceRange: '$$',
   };
 

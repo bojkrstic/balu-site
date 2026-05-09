@@ -26,9 +26,9 @@ export const servicePages = {
     intro:
       'Balu Baby Spa u Pirotu nudi prijatan i miran prostor za boravak u slanoj sobi, namenjen deci, roditeljima i odraslima koji žele prirodno okruženje za opuštanje i lakše disanje.',
     description:
-      'Slana soba u Pirotu za decu i odrasle u okviru Balu Baby Spa centra. Brzo zakazivanje termina putem WhatsApp-a i Vibera.',
+      'Slana soba u Pirotu za decu i odrasle u okviru Balu Baby Spa centra. Lokalna usluga u Pirotu i brzo zakazivanje termina putem WhatsApp-a i Vibera.',
     keywords:
-      'slana soba Pirot, slana soba za decu Pirot, slana soba za odrasle Pirot, balu pirot',
+      'slana soba Pirot, slana soba za bebe Pirot, slana soba za decu Pirot, slana soba za odrasle Pirot, balu pirot',
     benefits: [
       'prijatan ambijent za decu i odrasle',
       'prostor usmeren na lakše disanje i opuštanje',
@@ -62,9 +62,9 @@ export const servicePages = {
     intro:
       'U Balu Baby Spa centru u Pirotu hidroterapija za bebe osmišljena je kao nežno iskustvo kroz pokret u vodi, u toplom i sigurnom ambijentu prilagođenom najmlađima.',
     description:
-      'Hidroterapija za bebe u Pirotu u okviru Balu Baby Spa centra. Nežan pristup, topao ambijent i brzo zakazivanje termina.',
+      'Hidroterapija za bebe u Pirotu u okviru Balu Baby Spa centra. Kupanje beba, nežan pristup, topao ambijent i brzo zakazivanje termina.',
     keywords:
-      'hidroterapija za bebe Pirot, baby spa Pirot, balu baby spa pirot, vezbice za bebe pirot',
+      'hidroterapija za bebe Pirot, kupanje beba Pirot, kupanje bebe Pirot, baby spa Pirot, balu baby spa pirot, vezbice za bebe pirot',
     benefits: [
       'podrška koordinaciji i prirodnom pokretu',
       'opušten ambijent prilagođen bebama',
@@ -98,9 +98,9 @@ export const servicePages = {
     intro:
       'Balu Baby Spa u Pirotu nudi nežnu masažu beba i razvojne aktivnosti u prostoru koji je osmišljen da pruži toplinu, smirenost i podršku prirodnom razvoju.',
     description:
-      'Masaža beba u Pirotu u okviru Balu Baby Spa centra. Nežan dodir, miran ambijent i jednostavno zakazivanje termina.',
+      'Masaža beba u Pirotu u okviru Balu Baby Spa centra. Nežan dodir, miran ambijent, lokalna usluga u Pirotu i jednostavno zakazivanje termina.',
     keywords:
-      'masaža beba Pirot, masaza beba pirot, razvojne aktivnosti za bebe Pirot, balu pirot',
+      'masaža beba Pirot, masaza beba pirot, razvojne aktivnosti za bebe Pirot, baby spa Pirot, balu pirot',
     benefits: [
       'nežan pristup kroz dodir i opuštanje',
       'ambijent prilagođen bebama i roditeljima',
