@@ -35,6 +35,22 @@ export const servicePages = {
       'mogućnost porodičnog boravka u mirnom okruženju',
       'brzo zakazivanje termina putem WhatsApp-a i Vibera',
     ],
+    seoParagraphs: [
+      'Ako tražite slanu sobu u Pirotu, Balu Baby Spa nudi uredan, topao i prijatan prostor u kome deca i odrasli mogu da provedu vreme u mirnom ambijentu. Stranica je namenjena roditeljima koji žele brzo da dođu do osnovnih informacija o lokaciji, zakazivanju i samom boravku u slanoj sobi.',
+      'Slana soba za decu u Pirotu često je izbor porodica koje žele opuštenu rutinu, senzornu igru i prijatan prostor za boravak. Istovremeno, slana soba za odrasle u Pirotu daje mogućnost da i roditelji izdvoje vreme za predah, lakše disanje i opuštanje.',
+      'Balu Baby Spa povezuje lokalnu uslugu, jednostavno zakazivanje i jasno objašnjene informacije, kako bi posetioci iz Pirota i okoline lako pronašli ono što im je potrebno bez dodatnog traganja.',
+    ],
+    visitFlow: [
+      'Termin se zakazuje unapred putem WhatsApp-a ili Vibera.',
+      'Po dolasku dobijate kratke smernice o boravku i organizaciji prostora.',
+      'Boravak u slanoj sobi prilagođava se tome da deci i odraslima bude prijatno i opušteno.',
+    ],
+    relatedQueries: [
+      'slana soba Pirot',
+      'slana soba za decu Pirot',
+      'slana soba za odrasle Pirot',
+      'haloterapija Pirot',
+    ],
     goodFor: [
       'decu koja vole mirnu senzornu igru i istraživanje',
       'roditelje koji žele prijatan porodični ambijent',
@@ -71,6 +87,22 @@ export const servicePages = {
       'iskustvo koje roditeljima donosi osećaj sigurnosti i poverenja',
       'termini po zakazivanju sa jasnom pripremom za dolazak',
     ],
+    seoParagraphs: [
+      'Roditelji koji pretražuju hidroterapiju za bebe u Pirotu najčešće traže bezbedan prostor, topao ambijent i pristup koji je prilagođen najranijem uzrastu. U Balu Baby Spa centru ova usluga je predstavljena jasno i jednostavno, sa fokusom na osećaj sigurnosti za bebu i roditelje.',
+      'Kupanje beba u Pirotu, kada je pažljivo organizovano i vođeno, može da bude prijatno iskustvo koje podstiče prirodan pokret, opuštanje i uživanje u vodi. Zato je važno da roditelji unapred imaju pregled osnovnih informacija o dolasku, zakazivanju i toku tretmana.',
+      'Ova landing stranica namenjena je korisnicima koji traže lokalnu uslugu u Pirotu i žele da odmah pronađu kontakt, adresu i odgovore na najčešća pitanja o hidroterapiji za bebe.',
+    ],
+    visitFlow: [
+      'Termin se zakazuje unapred kako bi dolazak bio prilagođen bebi i roditeljima.',
+      'Po dolasku roditelji dobijaju kratke smernice za pripremu i tok tretmana.',
+      'Boravak u vodi odvija se u toplom ambijentu uz nežan i smiren pristup.',
+    ],
+    relatedQueries: [
+      'hidroterapija za bebe Pirot',
+      'kupanje beba Pirot',
+      'baby spa Pirot',
+      'vezbice za bebe Pirot',
+    ],
     goodFor: [
       'bebe u ranom razvojnom periodu',
       'roditelje koji žele nežan i siguran pristup',
@@ -106,6 +138,22 @@ export const servicePages = {
       'ambijent prilagođen bebama i roditeljima',
       'razvojne aktivnosti kao podrška ranom periodu',
       'jednostavno zakazivanje termina i dolaska',
+    ],
+    seoParagraphs: [
+      'Masaža beba u Pirotu je usluga koju roditelji često traže kada žele više nežnosti, smirenosti i pažnje u ranom razvojnom periodu. Balu Baby Spa ovu uslugu predstavlja kroz jednostavne informacije, lokalni kontakt i jasno objašnjen način zakazivanja.',
+      'Pored same masaže, roditeljima je važno da znaju da li je prostor prijatan, kako izgleda prvi dolazak i da li postoji individualniji pristup. Zato stranica prirodno pokriva upite kao što su masaža beba Pirot i razvojne aktivnosti za bebe u Pirotu, bez preterivanja i bez generičkog teksta.',
+      'Cilj sadržaja je da roditelji iz Pirota i okoline brzo razumeju šta mogu da očekuju i da bez dodatnih koraka dođu do termina, adrese i osnovnih informacija o usluzi.',
+    ],
+    visitFlow: [
+      'Termin se zakazuje unapred kako bi poseta bila mirna i organizovana.',
+      'Dolazak se prilagođava uzrastu deteta i ritmu porodice.',
+      'Masaža i razvojne aktivnosti odvijaju se u toplom prostoru uz nežan pristup i jasne smernice za roditelje.',
+    ],
+    relatedQueries: [
+      'masaža beba Pirot',
+      'masaza beba pirot',
+      'razvojne aktivnosti za bebe Pirot',
+      'baby spa Pirot',
     ],
     goodFor: [
       'roditelje koji traže masažu beba u Pirotu',

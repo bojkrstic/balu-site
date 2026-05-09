@@ -26,24 +26,60 @@ export default function ServiceLandingPage({ pageKey }) {
 
   const serviceSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: page.title,
-    provider: {
-      '@type': 'HealthAndBeautyBusiness',
-      name: 'Balu Baby Spa',
-      url: 'https://balufamily.rs/',
-      telephone: '+381653104333',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Danila Kisa 2',
-        addressLocality: 'Pirot',
-        postalCode: '18300',
-        addressCountry: 'RS',
+    '@graph': [
+      {
+        '@type': 'Service',
+        '@id': `https://balufamily.rs${page.path}#service`,
+        name: page.title,
+        serviceType: page.title,
+        areaServed: 'Pirot',
+        description: page.description,
+        url: `https://balufamily.rs${page.path}`,
+        provider: {
+          '@type': 'HealthAndBeautyBusiness',
+          '@id': 'https://balufamily.rs/#business',
+          name: 'Balu Baby Spa',
+          url: 'https://balufamily.rs/',
+          telephone: '+381653104333',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Danila Kisa 2',
+            addressLocality: 'Pirot',
+            postalCode: '18300',
+            addressCountry: 'RS',
+          },
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: page.title,
+          itemListElement: page.relatedQueries.map((query) => ({
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: query,
+            },
+          })),
+        },
       },
-    },
-    areaServed: 'Pirot',
-    description: page.description,
-    url: `https://balufamily.rs${page.path}`,
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `https://balufamily.rs${page.path}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Balu Baby Spa',
+            item: 'https://balufamily.rs/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: page.title,
+            item: `https://balufamily.rs${page.path}`,
+          },
+        ],
+      },
+    ],
   }
 
   return (
@@ -54,6 +90,17 @@ export default function ServiceLandingPage({ pageKey }) {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(186,230,253,0.45),transparent_28%),radial-gradient(circle_at_top_left,rgba(251,207,232,0.45),transparent_32%)]" />
         <div className="relative mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-10">
+          <nav aria-label="Breadcrumb" className="mb-4">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-500">
+              <li>
+                <a href={withSitePrefix('/')} className="transition hover:text-slate-700">
+                  Početna
+                </a>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li className="text-slate-700">{page.title}</li>
+            </ol>
+          </nav>
           <header className="flex flex-col items-center justify-between gap-3 rounded-[2rem] border border-white/70 bg-white/85 px-5 py-4 text-center shadow-sm backdrop-blur sm:rounded-full sm:flex-row sm:text-left">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose-400 sm:tracking-[0.3em]">Balu Family</p>
@@ -142,6 +189,34 @@ export default function ServiceLandingPage({ pageKey }) {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-10">
+        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-[2rem] bg-white p-7 shadow-lg shadow-slate-100">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-500">Detaljnije o usluzi</p>
+            <h2 className="mt-4 text-3xl font-bold text-slate-900">Detaljnije o usluzi i dolasku u Pirotu</h2>
+            <div className="mt-6 space-y-4 text-slate-600">
+              {page.seoParagraphs.map((paragraph) => (
+                <p key={paragraph} className="leading-8">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-emerald-100 bg-emerald-50/60 p-7 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-600">Kako Izgleda</p>
+            <h2 className="mt-4 text-3xl font-bold text-slate-900">Prvi koraci do termina</h2>
+            <div className="mt-6 space-y-4">
+              {page.visitFlow.map((item) => (
+                <div key={item} className="rounded-2xl border border-emerald-100 bg-white px-5 py-4 text-slate-700">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-10">
         <div className="rounded-[2rem] border border-emerald-100 bg-white p-7 shadow-lg shadow-emerald-50">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-500 sm:tracking-[0.25em]">Povezane Stranice</p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -156,6 +231,20 @@ export default function ServiceLandingPage({ pageKey }) {
                 <p className="break-words text-sm font-semibold uppercase tracking-[0.12em] text-slate-500 sm:tracking-[0.2em]">{item.eyebrow}</p>
                 <h3 className="mt-3 text-lg font-semibold text-slate-900">{item.title}</h3>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-10">
+        <div className="rounded-[2rem] border border-slate-100 bg-white p-7 shadow-lg shadow-slate-100">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-500">Najčešća interesovanja</p>
+          <h2 className="mt-4 text-3xl font-bold text-slate-900">Teme koje roditelje najčešće zanimaju</h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {page.relatedQueries.map((item) => (
+              <span key={item} className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700">
+                {item}
+              </span>
             ))}
           </div>
         </div>

@@ -211,6 +211,24 @@ export default function BaluBabySpaWebsite() {
     },
   ];
 
+  const homepageSeoBlocks = [
+    {
+      title: 'Balu Baby Spa u Pirotu',
+      text:
+        'Balu Baby Spa je lokalni centar u Pirotu koji na jednom mestu povezuje hidroterapiju za bebe, masažu beba i slanu sobu za decu i odrasle. Početna stranica je organizovana tako da roditelji brzo dođu do osnovnih informacija, kontakta i zasebnih stranica za svaku uslugu.',
+    },
+    {
+      title: 'Hidroterapija i masaža beba',
+      text:
+        'Kada korisnici pretražuju izraze kao što su hidroterapija za bebe Pirot, kupanje beba Pirot ili masaža beba Pirot, važno je da odmah dobiju jasan opis usluge, adresu i način zakazivanja. Zato početna stranica uvodi u svaku celinu i vodi ka detaljnim landing stranicama.',
+    },
+    {
+      title: 'Slana soba za decu i odrasle',
+      text:
+        'Za upite kao što su slana soba Pirot, slana soba za decu Pirot i slana soba za odrasle Pirot, početna stranica povezuje glavni pregled usluge sa dodatnim informacijama o prostoru, čestim pitanjima i brzom kontaktu putem WhatsApp-a i Vibera.',
+    },
+  ];
+
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'HealthAndBeautyBusiness',
@@ -739,6 +757,26 @@ export default function BaluBabySpaWebsite() {
                 <p className="leading-8 text-white/90">“{item.quote}”</p>
                 <footer className="mt-4 break-words text-sm font-semibold uppercase tracking-[0.08em] text-rose-100 sm:tracking-[0.15em]">{item.author}</footer>
               </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 sm:pb-20 lg:px-10">
+        <div className="rounded-[2rem] border border-slate-100 bg-white p-7 shadow-lg shadow-slate-100 sm:p-9">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-500">Važne informacije</p>
+            <h2 className="mt-4 text-3xl font-bold text-slate-900">Važne informacije za roditelje koji traže usluge u Pirotu</h2>
+            <p className="mt-4 leading-8 text-slate-600">
+              Ovaj pregled povezuje najvažnije lokalne upite sa jasnim informacijama o uslugama, prostoru i načinu zakazivanja.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+            {homepageSeoBlocks.map((item) => (
+              <article key={item.title} className="rounded-[1.75rem] bg-slate-50 p-6">
+                <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
+                <p className="mt-3 leading-8 text-slate-600">{item.text}</p>
+              </article>
             ))}
           </div>
         </div>
