@@ -12,6 +12,7 @@ export default defineConfig({
         slanaSobaPirot: resolve(__dirname, 'slana-soba-pirot/index.html'),
         hidroterapijaZaBebePirot: resolve(__dirname, 'hidroterapija-za-bebe-pirot/index.html'),
         masazaBebaPirot: resolve(__dirname, 'masaza-beba-pirot/index.html'),
+        izradaSajta: resolve(__dirname, 'izrada-sajta/index.html'),
       },
     },
   },

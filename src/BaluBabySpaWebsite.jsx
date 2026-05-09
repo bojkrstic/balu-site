@@ -924,6 +924,11 @@ export default function BaluBabySpaWebsite() {
           </div>
         </div>
       </section>
+      <footer className="border-t border-slate-200 bg-white px-4 py-7 text-center text-sm text-slate-500 sm:px-6 lg:px-10">
+        <a href={withSitePrefix('/izrada-sajta/')} className="transition hover:text-slate-700">
+          Izrada sajta i održavanje
+        </a>
+      </footer>
       {activeMedia && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/80 px-4 py-10"
